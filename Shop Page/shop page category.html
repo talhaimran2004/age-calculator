@@ -11,10 +11,11 @@
 </head>
 
 <body>
-    <header>
-        <div id="container" class="font-sans">
+    <div id="container" class="font-sans">
+
+        <header class="hidden lg:block">
             <div id="navbar1" class="flex justify-between items-center bg-[#9d7e2e] text-white font-bold text-xl">
-                <div id="left-sec1" class="flex justify-around space-x-24 ml-16 mt-2">
+                <div id="left-sec1" class="flex justify-around space-x-14 ml-[62px] mt-2">
                     <div id="branding1">
                         <img src="../Assets/Media/1stnav.png" alt="logo">
                     </div>
@@ -41,12 +42,12 @@
                 </div>
             </div>
             <div id="navbar2" class="flex justify-between items-center bg-slate-100 py-1 text-black font-bold text-xl">
-                <div id="left-sec2" class="flex justify-around space-x-20 ml-11">
+                <div id="left-sec2" class="flex justify-around space-x-14 ml-10">
                     <div id="branding2">
                         <a href="../index.html"><img class="w-24" src="../Assets/Media/2ndnav.png" alt="logo"></a>
                     </div>
                     <div id="links2">
-                        <ul class="flex justify-around mt-9 space-x-16 ">
+                        <ul class="flex justify-around mt-9 space-x-10 ">
                             <li class="capitalize
                         tracking-wider    
                         inline-block
@@ -195,27 +196,161 @@
                 </div>
                 <div id="right-sec2" class="mr-12 text-white font-medium">
                     <div id="buttons">
-                        <button class="flex bg-blue-900 py-3 px-5 rounded-lg hover:bg-blue-700 active:bg-blue-500">
+                        <button class="flex bg-blue-900 py-3 px-5 rounded-lg hover:bg-[#60a1f6] active:bg-blue-700">
                             <span class="pr-2"><img src="../Assets/Media/Shopping_cart.png" alt=""></span><a
                                 href="#">Your Cart</a>
                         </button>
                     </div>
                 </div>
             </div>
-            <main>
+        </header>
 
+        <header class="visible lg:hidden">
+            <div class="">
+                <header>
+                    <div class="relative z-20 border-b bg-white">
+                        <div class="pr-6 pl-2 pt-2">
+                            <div class="flex items-center justify-between">
+                                <div class="relative z-20">
+                                    <a href="#">
+                                        <img src="../Assets/Media/2ndnav.png" alt="affan baba" class="w-32">
+                                    </a>
+                                </div>
+
+                                <div class="flex items-center justify-end border-l lg:border-l-0">
+                                    <input type="checkbox" name="hamburger" id="hamburger" class="peer" hidden>
+                                    <label for="hamburger"
+                                        class="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden">
+                                        <div aria-hidden="true"
+                                            class="m-auto h-0.5 w-6 rounded bg-[#9d7e2e] transition duration-300"></div>
+                                        <div aria-hidden="true"
+                                            class="m-auto mt-2 h-0.5 w-6 rounded bg-[#9d7e2e] transition duration-300">
+                                        </div>
+                                    </label>
+
+                                    <div
+                                        class="peer-checked:translate-x-0 fixed inset-0 w-screen translate-x-[-100%] bg-[#60a1f6] border-r shadow-xl transition duration-300">
+                                        <div class="flex flex-col  justify-between">
+                                            <ul class="pl-6 pt-44 pb-16 text-white font-medium space-y-8">
+                                                <li>
+                                                    <a href="#"
+                                                        class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-yellow-400 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                                                        <span class="relative group-hover:text-black"><a
+                                                                href="../index.html"> REAL ESTATE</a></span>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-yellow-400 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                                                        <span class="relative group-hover:text-black">SHOP</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-yellow-400 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                                                        <span class="relative group-hover:text-black"><a
+                                                                href="../Services/index.html">SERVICES</a></span>
+                                                    </a>
+                                                </li>
+                                                <div class="flex space-x-5">
+                                                    <li>
+                                                        <a href="#"><img src="../Assets/Media/facebook_logo.png"
+                                                                alt=""></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="../Assets/Media/Twitter_logo_white.png" alt="">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="../Assets/Media/Instagram_Logo_white.png"
+                                                                alt="">
+                                                        </a>
+                                                    </li>
+                                                </div>
+                                            </ul>
+
+                                            <hr>
+
+                                            <ul class="pl-6 pt-16 pb-16 text-white font-medium space-y-8">
+                                                <li>
+                                                    <a href="#"
+                                                        class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-yellow-400 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                                                        <span class="relative group-hover:text-black">FURNITURE</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-yellow-400 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                                                        <span class="relative group-hover:text-black">APPLIANCES</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-yellow-400 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                                                        <span class="relative group-hover:text-black">DECORATION</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-yellow-400 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                                                        <span class="relative group-hover:text-black">RENT</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-yellow-400 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                                                        <span class="relative group-hover:text-black">AGENTS</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-yellow-400 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                                                        <span class="relative group-hover:text-black">BLOG</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                            <div class="border-t pt-16 px-20">
+                                                <a href="#"
+                                                    class="px-6 py-3 rounded-full bg-gradient-to-r from-[#9d7e2e] to-blue-900  text-white flex ">
+                                                    <span><img src="../Assets/Media/Shopping_cart.png" alt=""
+                                                            class=""></span><span class=" mt-1 ml-12"> YOUR CART</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </header>
+
+        <main>
+
+            <section>
                 <div
-                    class="space-for-ads bg-[#60a1f6] w-[900px] h-[150px] text-gray-200 uppercase flex justify-center items-center content-center m-auto mb-16 mt-14 border-[2px] border-blue-500 text-lg tracking-tight">
+                    class="space-for-ads bg-[#60a1f6] w-[320px] lg:w-[900px] h-[150px] sm:w-[550px] md:w-[700px] text-white uppercase text-center m-auto lg:mb-8 mb-10 mt-10 border-[2px] leading-[150px] border-blue-500 text-lg tracking-wider">
                     <p>space available for ads</p>
                 </div>
+            </section>
 
 
-                <div class=" text-[#6f6f6f] tracking-tighter font-medium text-lg text-center mb-14 mr-[767px]">
-                    <p>HOME / SHOP / FURNITURE / CHAIRS</p>
-                </div>
+            <div class=" text-[#6f6f6f] tracking-tighter font-medium text-lg text-center mb-14 m-auto">
+                <p>HOME / SHOP / FURNITURE / CHAIRS</p>
+            </div>
 
-                <div id="main-for-the-whole" class="flex justify-evenly">
-                    <div class="row-1 w-[320px] ml-5 bg-[#fafafa] shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] h-[1210px]">
+<!-- BUTTON -->
+<input type="button" value="Filter" id="filter-btn" class="text-center py-2 px-4 rounded mx-44 my-10 border-2 border-blue-700 hover:bg-blue-300 visible sm:hidden">
+
+            <div id="main-for-the-whole" class="flex justify-evenly mx-5 space-x-5">
+
+                <!-- SIDEBAR -->
+                <div id="sidebar" class="transition-all">
+
+                    <div class="row-1 w-[320px] bg-[#fafafa] shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] h-[1210px]">
                         <div class="uppercase bg-[#9d7e2e] text-white tracking-tight py-7">
                             <p class="ml-5">show results by</p>
                         </div>
@@ -375,558 +510,564 @@
 
 
                     </div>
-                    <div class="products-area space-y-8 mr-5">
-                        <div class="first-col flex space-x-5">
-                            <div
-                                class="p-5 px-8  shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
-                                <div class="flex justify-between mb-3">
-                                    <button
-                                        class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
-                                    <img src="../Assets/Media/heart.png" alt="">
-                                </div>
-                                <div style="background-image: url('../Assets/Media/feature\ products2.png'); height: 222px; width: 222px;"
-                                    class="bg-cover img m-auto flex justify-center items-center">
-                                    <div
-                                        class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
-                                        <p>view details</p>
-                                    </div>
-                                </div>
-                                <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
-                                    <div class="flex">
-                                        <div>
-                                            <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
-                                            <p>Drawing Room Sofa</p>
-                                            <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
-                                        </div>
-                                        <div class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1  ml-2">
-                                            <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
-                                            <button class="uppercase whitespace-nowrap tracking-tighter text-sm">add to
-                                                cart</button>
-                                        </div>
-                                    </div>
+                </div>
 
-
-                                    <div class="flex justify-between">
-                                        <div>
-                                            <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
-                                            <p>PKR 12,500 </p>
-                                        </div>
-                                        <div
-                                            class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[13px] tracking-tighter text-sm py-1 hover:bg-yellow-500 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
-                                            <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
-                                            <button class="uppercase f">buy now</button>
-                                        </div>
-                                    </div>
-                                </div>
-
+                <!-- PRODUCTS -->
+                <div class="products-area space-y-8">
+                    <div class="first-col flex space-x-3">
+                        <div
+                            class="p-5 px-8  shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
+                            <div class="flex justify-between mb-3">
+                                <button class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
+                                <img src="../Assets/Media/heart.png" alt="">
                             </div>
-
-
-                            <div
-                                class=" p-5  px-8 shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
-                                <div class="flex justify-between mb-3">
-                                    <button
-                                        class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
-                                    <img class="" src="../Assets/Media/heart.png" alt="">
+                            <div style="background-image: url('../Assets/Media/feature\ products2.png'); height: 222px; width: 222px;"
+                                class="bg-cover img m-auto flex justify-center items-center">
+                                <div
+                                    class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
+                                    <p>view details</p>
                                 </div>
-                                <div style="background-image: url('../Assets/Media/feature\ products3.png'); height: 222px; width: 222px;"
-                                    class="bg-cover img m-auto flex justify-center items-center">
-                                    <div
-                                        class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
-                                        <p>view details</p>
-                                    </div>
-                                </div>
-                                <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
-                                    <div class="flex">
-                                        <div>
-                                            <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
-                                            <p>Drawing Room Sofa</p>
-                                            <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
-                                        </div>
-                                        <div class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1  ml-2">
-                                            <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
-                                            <button class="uppercase whitespace-nowrap tracking-tighter text-sm">add to
-                                                cart</button>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="flex justify-between">
-                                        <div>
-                                            <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
-                                            <p>PKR 12,500 </p>
-                                        </div>
-                                        <div
-                                            class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[13px] tracking-tighter text-sm py-1 hover:bg-yellow-500 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
-                                            <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
-                                            <button class="uppercase f">buy now</button>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
-
-                            <div
-                                class="p-5 px-8 shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
-                                <div class="flex justify-between mb-3">
-                                    <button
-                                        class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
-                                    <img src="../Assets/Media/heart.png" alt="">
-                                </div>
-                                <div style="background-image: url('../Assets/Media/featureproducts4.png'); height: 222px; width: 222px;"
-                                    class="bg-cover img m-auto flex justify-center items-center">
+                            <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
+                                <div class="flex">
+                                    <div>
+                                        <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
+                                        <p>Drawing Room Sofa</p>
+                                        <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
+                                    </div>
                                     <div
-                                        class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
-                                        <p>view details</p>
-                                    </div>
-                                </div>
-                                <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
-                                    <div class="flex">
-                                        <div>
-                                            <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
-                                            <p>Drawing Room Sofa</p>
-                                            <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
-                                        </div>
-                                        <div class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1  ml-2">
-                                            <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
-                                            <button class="uppercase whitespace-nowrap tracking-tighter text-sm">add to
-                                                cart</button>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="flex justify-between">
-                                        <div>
-                                            <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
-                                            <p>PKR 12,500 </p>
-                                        </div>
-                                        <div
-                                            class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[13px] tracking-tighter text-sm py-1 hover:bg-yellow-500 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
-                                            <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
-                                            <button class="uppercase f">buy now</button>
-                                        </div>
+                                        class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1 hover:bg-[#60a1f6]">
+                                        <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
+                                        <button class="uppercase whitespace-nowrap tracking-tighter text-sm pr-2">add to
+                                            cart</button>
                                     </div>
                                 </div>
 
-                            </div>
 
-                        </div>
-
-                        <div class="second-col flex space-x-5">
-                            <div
-                                class=" p-5  px-8 shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
-                                <div class="flex justify-between mb-3">
-                                    <button
-                                        class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
-                                    <img class="" src="../Assets/Media/heart.png" alt="">
-                                </div>
-                                <div style="background-image: url('../Assets/Media/feature\ products3.png'); height: 222px; width: 222px;"
-                                    class="bg-cover img m-auto flex justify-center items-center">
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
+                                        <p>PKR 12,500 </p>
+                                    </div>
                                     <div
-                                        class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
-                                        <p>view details</p>
+                                        class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[14px] tracking-tighter text-sm py-1 hover:underline underline-offset-4 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
+                                        <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
+                                        <button class="uppercase f">buy now</button>
                                     </div>
                                 </div>
-                                <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
-                                    <div class="flex">
-                                        <div>
-                                            <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
-                                            <p>Drawing Room Sofa</p>
-                                            <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
-                                        </div>
-                                        <div class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1  ml-2">
-                                            <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
-                                            <button class="uppercase whitespace-nowrap tracking-tighter text-sm">add to
-                                                cart</button>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="flex justify-between">
-                                        <div>
-                                            <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
-                                            <p>PKR 12,500 </p>
-                                        </div>
-                                        <div
-                                            class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[13px] tracking-tighter text-sm py-1 hover:bg-yellow-500 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
-                                            <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
-                                            <button class="uppercase f">buy now</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div
-                                class="p-5 px-8 shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
-                                <div class="flex justify-between mb-3">
-                                    <button
-                                        class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
-                                    <img src="../Assets/Media/heart.png" alt="">
-                                </div>
-                                <div style="background-image: url('../Assets/Media/featureproducts4.png'); height: 222px; width: 222px;"
-                                    class="bg-cover img m-auto flex justify-center items-center">
-                                    <div
-                                        class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
-                                        <p>view details</p>
-                                    </div>
-                                </div>
-                                <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
-                                    <div class="flex">
-                                        <div>
-                                            <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
-                                            <p>Drawing Room Sofa</p>
-                                            <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
-                                        </div>
-                                        <div class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1  ml-2">
-                                            <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
-                                            <button class="uppercase whitespace-nowrap tracking-tighter text-sm">add to
-                                                cart</button>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="flex justify-between">
-                                        <div>
-                                            <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
-                                            <p>PKR 12,500 </p>
-                                        </div>
-                                        <div
-                                            class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[13px] tracking-tighter text-sm py-1 hover:bg-yellow-500 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
-                                            <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
-                                            <button class="uppercase f">buy now</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div
-                                class="px-8 p-5 shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
-                                <div class="flex justify-between mb-3">
-                                    <button
-                                        class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
-                                    <img src="../Assets/Media/heart.png" alt="">
-                                </div>
-                                <div style="background-image: url('../Assets/Media/feature\ products1.png'); height: 222px; width: 222px;"
-                                    class="bg-cover img m-auto flex justify-center items-center">
-                                    <div
-                                        class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
-                                        <p> <a href="../Shop Page/shop page product details.html">view details</a></p>
-                                    </div>
-                                </div>
-                                <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
-                                    <div class="flex">
-                                        <div>
-                                            <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
-                                            <p>Drawing Room Sofa</p>
-                                            <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
-                                        </div>
-                                        <div class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1  ml-2">
-                                            <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
-                                            <button class="uppercase whitespace-nowrap tracking-tighter text-sm">add to
-                                                cart</button>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="flex justify-between">
-                                        <div>
-                                            <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
-                                            <p>PKR 12,500 </p>
-                                        </div>
-                                        <div
-                                            class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[13px] tracking-tighter text-sm py-1 hover:bg-yellow-500 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
-                                            <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
-                                            <button class="uppercase f">buy now</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="third-col flex space-x-5">
-                            <div
-                                class="p-5 px-8  shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
-                                <div class="flex justify-between mb-3">
-                                    <button
-                                        class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
-                                    <img src="../Assets/Media/heart.png" alt="">
-                                </div>
-                                <div style="background-image: url('../Assets/Media/feature\ products2.png'); height: 222px; width: 222px;"
-                                    class="bg-cover img m-auto flex justify-center items-center">
-                                    <div
-                                        class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
-                                        <p>view details</p>
-                                    </div>
-                                </div>
-                                <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
-                                    <div class="flex">
-                                        <div>
-                                            <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
-                                            <p>Drawing Room Sofa</p>
-                                            <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
-                                        </div>
-                                        <div class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1  ml-2">
-                                            <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
-                                            <button class="uppercase whitespace-nowrap tracking-tighter text-sm">add to
-                                                cart</button>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="flex justify-between">
-                                        <div>
-                                            <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
-                                            <p>PKR 12,500 </p>
-                                        </div>
-                                        <div
-                                            class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[13px] tracking-tighter text-sm py-1 hover:bg-yellow-500 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
-                                            <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
-                                            <button class="uppercase f">buy now</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-                            <div
-                                class=" p-5  px-8 shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
-                                <div class="flex justify-between mb-3">
-                                    <button
-                                        class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
-                                    <img class="" src="../Assets/Media/heart.png" alt="">
-                                </div>
-                                <div style="background-image: url('../Assets/Media/feature\ products3.png'); height: 222px; width: 222px;"
-                                    class="bg-cover img m-auto flex justify-center items-center">
-                                    <div
-                                        class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
-                                        <p>view details</p>
-                                    </div>
-                                </div>
-                                <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
-                                    <div class="flex">
-                                        <div>
-                                            <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
-                                            <p>Drawing Room Sofa</p>
-                                            <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
-                                        </div>
-                                        <div class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1  ml-2">
-                                            <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
-                                            <button class="uppercase whitespace-nowrap tracking-tighter text-sm">add to
-                                                cart</button>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="flex justify-between">
-                                        <div>
-                                            <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
-                                            <p>PKR 12,500 </p>
-                                        </div>
-                                        <div
-                                            class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[13px] tracking-tighter text-sm py-1 hover:bg-yellow-500 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
-                                            <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
-                                            <button class="uppercase f">buy now</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div
-                                class="p-5 px-8 shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
-                                <div class="flex justify-between mb-3">
-                                    <button
-                                        class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
-                                    <img src="../Assets/Media/heart.png" alt="">
-                                </div>
-                                <div style="background-image: url('../Assets/Media/featureproducts4.png'); height: 222px; width: 222px;"
-                                    class="bg-cover img m-auto flex justify-center items-center">
-                                    <div
-                                        class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
-                                        <p>view details</p>
-                                    </div>
-                                </div>
-                                <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
-                                    <div class="flex">
-                                        <div>
-                                            <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
-                                            <p>Drawing Room Sofa</p>
-                                            <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
-                                        </div>
-                                        <div class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1  ml-2">
-                                            <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
-                                            <button class="uppercase whitespace-nowrap tracking-tighter text-sm">add to
-                                                cart</button>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="flex justify-between">
-                                        <div>
-                                            <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
-                                            <p>PKR 12,500 </p>
-                                        </div>
-                                        <div
-                                            class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[13px] tracking-tighter text-sm py-1 hover:bg-yellow-500 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
-                                            <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
-                                            <button class="uppercase f">buy now</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="fourth-col flex space-x-5">
-                            <div
-                                class=" p-5  px-8 shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
-                                <div class="flex justify-between mb-3">
-                                    <button
-                                        class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
-                                    <img class="" src="../Assets/Media/heart.png" alt="">
-                                </div>
-                                <div style="background-image: url('../Assets/Media/feature\ products3.png'); height: 222px; width: 222px;"
-                                    class="bg-cover img m-auto flex justify-center items-center">
-                                    <div
-                                        class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
-                                        <p>view details</p>
-                                    </div>
-                                </div>
-                                <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
-                                    <div class="flex">
-                                        <div>
-                                            <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
-                                            <p>Drawing Room Sofa</p>
-                                            <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
-                                        </div>
-                                        <div class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1  ml-2">
-                                            <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
-                                            <button class="uppercase whitespace-nowrap tracking-tighter text-sm">add to
-                                                cart</button>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="flex justify-between">
-                                        <div>
-                                            <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
-                                            <p>PKR 12,500 </p>
-                                        </div>
-                                        <div
-                                            class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[13px] tracking-tighter text-sm py-1 hover:bg-yellow-500 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
-                                            <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
-                                            <button class="uppercase f">buy now</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div
-                                class="p-5 px-8 shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
-                                <div class="flex justify-between mb-3">
-                                    <button
-                                        class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
-                                    <img src="../Assets/Media/heart.png" alt="">
-                                </div>
-                                <div style="background-image: url('../Assets/Media/featureproducts4.png'); height: 222px; width: 222px;"
-                                    class="bg-cover img m-auto flex justify-center items-center">
-                                    <div
-                                        class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
-                                        <p>view details</p>
-                                    </div>
-                                </div>
-                                <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
-                                    <div class="flex">
-                                        <div>
-                                            <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
-                                            <p>Drawing Room Sofa</p>
-                                            <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
-                                        </div>
-                                        <div class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1  ml-2">
-                                            <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
-                                            <button class="uppercase whitespace-nowrap tracking-tighter text-sm">add to
-                                                cart</button>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="flex justify-between">
-                                        <div>
-                                            <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
-                                            <p>PKR 12,500 </p>
-                                        </div>
-                                        <div
-                                            class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[13px] tracking-tighter text-sm py-1 hover:bg-yellow-500 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
-                                            <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
-                                            <button class="uppercase f">buy now</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div
-                                class="px-8 p-5 shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
-                                <div class="flex justify-between mb-3">
-                                    <button
-                                        class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
-                                    <img src="../Assets/Media/heart.png" alt="">
-                                </div>
-                                <div style="background-image: url('../Assets/Media/feature\ products1.png'); height: 222px; width: 222px;"
-                                    class="bg-cover img m-auto flex justify-center items-center">
-                                    <div
-                                        class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
-                                        <p> <a href="../Shop Page/shop page product details.html">view details</a></p>
-                                    </div>
-                                </div>
-                                <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
-                                    <div class="flex">
-                                        <div>
-                                            <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
-                                            <p>Drawing Room Sofa</p>
-                                            <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
-                                        </div>
-                                        <div class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1  ml-2">
-                                            <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
-                                            <button class="uppercase whitespace-nowrap tracking-tighter text-sm">add to
-                                                cart</button>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="flex justify-between">
-                                        <div>
-                                            <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
-                                            <p>PKR 12,500 </p>
-                                        </div>
-                                        <div
-                                            class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[13px] tracking-tighter text-sm py-1 hover:bg-yellow-500 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
-                                            <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
-                                            <button class="uppercase f">buy now</button>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
 
                         </div>
 
 
-            </main>
+                        <div
+                            class=" p-5  px-8 shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
+                            <div class="flex justify-between mb-3">
+                                <button class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
+                                <img class="" src="../Assets/Media/heart.png" alt="">
+                            </div>
+                            <div style="background-image: url('../Assets/Media/feature\ products3.png'); height: 222px; width: 222px;"
+                                class="bg-cover img m-auto flex justify-center items-center">
+                                <div
+                                    class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
+                                    <p>view details</p>
+                                </div>
+                            </div>
+                            <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
+                                <div class="flex">
+                                    <div>
+                                        <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
+                                        <p>Drawing Room Sofa</p>
+                                        <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
+                                    </div>
+                                    <div
+                                        class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1 hover:bg-[#60a1f6]">
+                                        <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
+                                        <button class="uppercase whitespace-nowrap tracking-tighter text-sm pr-2">add to
+                                            cart</button>
+                                    </div>
+                                </div>
 
-            <footer>
+
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
+                                        <p>PKR 12,500 </p>
+                                    </div>
+                                    <div
+                                        class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[14px] tracking-tighter text-sm py-1 hover:underline underline-offset-4 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
+                                        <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
+                                        <button class="uppercase f">buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="p-5 px-8 shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
+                            <div class="flex justify-between mb-3">
+                                <button class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
+                                <img src="../Assets/Media/heart.png" alt="">
+                            </div>
+                            <div style="background-image: url('../Assets/Media/featureproducts4.png'); height: 222px; width: 222px;"
+                                class="bg-cover img m-auto flex justify-center items-center">
+                                <div
+                                    class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
+                                    <p>view details</p>
+                                </div>
+                            </div>
+                            <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
+                                <div class="flex">
+                                    <div>
+                                        <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
+                                        <p>Drawing Room Sofa</p>
+                                        <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
+                                    </div>
+                                    <div
+                                        class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1 hover:bg-[#60a1f6]">
+                                        <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
+                                        <button class="uppercase whitespace-nowrap tracking-tighter text-sm pr-2">add to
+                                            cart</button>
+                                    </div>
+                                </div>
 
 
-        </div>
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
+                                        <p>PKR 12,500 </p>
+                                    </div>
+                                    <div
+                                        class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[14px] tracking-tighter text-sm py-1 hover:underline underline-offset-4 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
+                                        <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
+                                        <button class="uppercase f">buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="second-col flex space-x-3">
+                        <div
+                            class=" p-5  px-8 shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
+                            <div class="flex justify-between mb-3">
+                                <button class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
+                                <img class="" src="../Assets/Media/heart.png" alt="">
+                            </div>
+                            <div style="background-image: url('../Assets/Media/feature\ products3.png'); height: 222px; width: 222px;"
+                                class="bg-cover img m-auto flex justify-center items-center">
+                                <div
+                                    class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
+                                    <p>view details</p>
+                                </div>
+                            </div>
+                            <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
+                                <div class="flex">
+                                    <div>
+                                        <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
+                                        <p>Drawing Room Sofa</p>
+                                        <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
+                                    </div>
+                                    <div
+                                        class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1 hover:bg-[#60a1f6]">
+                                        <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
+                                        <button class="uppercase whitespace-nowrap tracking-tighter text-sm pr-2">add to
+                                            cart</button>
+                                    </div>
+                                </div>
+
+
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
+                                        <p>PKR 12,500 </p>
+                                    </div>
+                                    <div
+                                        class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[14px] tracking-tighter text-sm py-1 hover:underline underline-offset-4 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
+                                        <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
+                                        <button class="uppercase f">buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="p-5 px-8 shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
+                            <div class="flex justify-between mb-3">
+                                <button class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
+                                <img src="../Assets/Media/heart.png" alt="">
+                            </div>
+                            <div style="background-image: url('../Assets/Media/featureproducts4.png'); height: 222px; width: 222px;"
+                                class="bg-cover img m-auto flex justify-center items-center">
+                                <div
+                                    class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
+                                    <p>view details</p>
+                                </div>
+                            </div>
+                            <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
+                                <div class="flex">
+                                    <div>
+                                        <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
+                                        <p>Drawing Room Sofa</p>
+                                        <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
+                                    </div>
+                                    <div
+                                        class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1 hover:bg-[#60a1f6]">
+                                        <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
+                                        <button class="uppercase whitespace-nowrap tracking-tighter text-sm pr-2">add to
+                                            cart</button>
+                                    </div>
+                                </div>
+
+
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
+                                        <p>PKR 12,500 </p>
+                                    </div>
+                                    <div
+                                        class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[14px] tracking-tighter text-sm py-1 hover:underline underline-offset-4 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
+                                        <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
+                                        <button class="uppercase f">buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="px-8 p-5 shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
+                            <div class="flex justify-between mb-3">
+                                <button class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
+                                <img src="../Assets/Media/heart.png" alt="">
+                            </div>
+                            <div style="background-image: url('../Assets/Media/feature\ products1.png'); height: 222px; width: 222px;"
+                                class="bg-cover img m-auto flex justify-center items-center">
+                                <div
+                                    class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
+                                    <p> <a href="../Shop Page/shop page product details.html">view details</a></p>
+                                </div>
+                            </div>
+                            <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
+                                <div class="flex">
+                                    <div>
+                                        <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
+                                        <p>Drawing Room Sofa</p>
+                                        <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
+                                    </div>
+                                    <div
+                                        class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1 hover:bg-[#60a1f6]">
+                                        <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
+                                        <button class="uppercase whitespace-nowrap tracking-tighter text-sm pr-2">add to
+                                            cart</button>
+                                    </div>
+                                </div>
+
+
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
+                                        <p>PKR 12,500 </p>
+                                    </div>
+                                    <div
+                                        class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[14px] tracking-tighter text-sm py-1 hover:underline underline-offset-4 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
+                                        <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
+                                        <button class="uppercase f">buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="third-col flex space-x-3">
+                        <div
+                            class="p-5 px-8  shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
+                            <div class="flex justify-between mb-3">
+                                <button class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
+                                <img src="../Assets/Media/heart.png" alt="">
+                            </div>
+                            <div style="background-image: url('../Assets/Media/feature\ products2.png'); height: 222px; width: 222px;"
+                                class="bg-cover img m-auto flex justify-center items-center">
+                                <div
+                                    class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
+                                    <p>view details</p>
+                                </div>
+                            </div>
+                            <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
+                                <div class="flex">
+                                    <div>
+                                        <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
+                                        <p>Drawing Room Sofa</p>
+                                        <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
+                                    </div>
+                                    <div
+                                        class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1 hover:bg-[#60a1f6]">
+                                        <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
+                                        <button class="uppercase whitespace-nowrap tracking-tighter text-sm pr-2">add to
+                                            cart</button>
+                                    </div>
+                                </div>
+
+
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
+                                        <p>PKR 12,500 </p>
+                                    </div>
+                                    <div
+                                        class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[14px] tracking-tighter text-sm py-1 hover:underline underline-offset-4 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
+                                        <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
+                                        <button class="uppercase f">buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class=" p-5  px-8 shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
+                            <div class="flex justify-between mb-3">
+                                <button class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
+                                <img class="" src="../Assets/Media/heart.png" alt="">
+                            </div>
+                            <div style="background-image: url('../Assets/Media/feature\ products3.png'); height: 222px; width: 222px;"
+                                class="bg-cover img m-auto flex justify-center items-center">
+                                <div
+                                    class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
+                                    <p>view details</p>
+                                </div>
+                            </div>
+                            <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
+                                <div class="flex">
+                                    <div>
+                                        <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
+                                        <p>Drawing Room Sofa</p>
+                                        <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
+                                    </div>
+                                    <div
+                                        class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1 hover:bg-[#60a1f6]">
+                                        <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
+                                        <button class="uppercase whitespace-nowrap tracking-tighter text-sm pr-2">add to
+                                            cart</button>
+                                    </div>
+                                </div>
+
+
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
+                                        <p>PKR 12,500 </p>
+                                    </div>
+                                    <div
+                                        class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[14px] tracking-tighter text-sm py-1 hover:underline underline-offset-4 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
+                                        <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
+                                        <button class="uppercase f">buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="p-5 px-8 shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
+                            <div class="flex justify-between mb-3">
+                                <button class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
+                                <img src="../Assets/Media/heart.png" alt="">
+                            </div>
+                            <div style="background-image: url('../Assets/Media/featureproducts4.png'); height: 222px; width: 222px;"
+                                class="bg-cover img m-auto flex justify-center items-center">
+                                <div
+                                    class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
+                                    <p>view details</p>
+                                </div>
+                            </div>
+                            <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
+                                <div class="flex">
+                                    <div>
+                                        <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
+                                        <p>Drawing Room Sofa</p>
+                                        <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
+                                    </div>
+                                    <div
+                                        class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1 hover:bg-[#60a1f6]">
+                                        <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
+                                        <button class="uppercase whitespace-nowrap tracking-tighter text-sm pr-2">add to
+                                            cart</button>
+                                    </div>
+                                </div>
+
+
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
+                                        <p>PKR 12,500 </p>
+                                    </div>
+                                    <div
+                                        class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[14px] tracking-tighter text-sm py-1 hover:underline underline-offset-4 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
+                                        <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
+                                        <button class="uppercase f">buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="fourth-col flex space-x-3">
+                        <div
+                            class=" p-5  px-8 shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
+                            <div class="flex justify-between mb-3">
+                                <button class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
+                                <img class="" src="../Assets/Media/heart.png" alt="">
+                            </div>
+                            <div style="background-image: url('../Assets/Media/feature\ products3.png'); height: 222px; width: 222px;"
+                                class="bg-cover img m-auto flex justify-center items-center">
+                                <div
+                                    class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
+                                    <p>view details</p>
+                                </div>
+                            </div>
+                            <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
+                                <div class="flex">
+                                    <div>
+                                        <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
+                                        <p>Drawing Room Sofa</p>
+                                        <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
+                                    </div>
+                                    <div
+                                        class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1 hover:bg-[#60a1f6]">
+                                        <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
+                                        <button class="uppercase whitespace-nowrap tracking-tighter text-sm pr-2">add to
+                                            cart</button>
+                                    </div>
+                                </div>
+
+
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
+                                        <p>PKR 12,500 </p>
+                                    </div>
+                                    <div
+                                        class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[14px] tracking-tighter text-sm py-1 hover:underline underline-offset-4 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
+                                        <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
+                                        <button class="uppercase f">buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="p-5 px-8 shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
+                            <div class="flex justify-between mb-3">
+                                <button class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
+                                <img src="../Assets/Media/heart.png" alt="">
+                            </div>
+                            <div style="background-image: url('../Assets/Media/featureproducts4.png'); height: 222px; width: 222px;"
+                                class="bg-cover img m-auto flex justify-center items-center">
+                                <div
+                                    class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
+                                    <p>view details</p>
+                                </div>
+                            </div>
+                            <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
+                                <div class="flex">
+                                    <div>
+                                        <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
+                                        <p>Drawing Room Sofa</p>
+                                        <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
+                                    </div>
+                                    <div
+                                        class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1 hover:bg-[#60a1f6]">
+                                        <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
+                                        <button class="uppercase whitespace-nowrap tracking-tighter text-sm pr-2">add to
+                                            cart</button>
+                                    </div>
+                                </div>
+
+
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
+                                        <p>PKR 12,500 </p>
+                                    </div>
+                                    <div
+                                        class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[14px] tracking-tighter text-sm py-1 hover:underline underline-offset-4 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
+                                        <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
+                                        <button class="uppercase f">buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="px-8 p-5 shadow-[0_3px_6px_0_rgba(0,0,0,0.25)] transform hover:bg-white transition duration-500 hover:scale-105">
+                            <div class="flex justify-between mb-3">
+                                <button class=" bg-[#9d7e2e] text-white px-5 py-1 tracking-tighter text-sm">NEW</button>
+                                <img src="../Assets/Media/heart.png" alt="">
+                            </div>
+                            <div style="background-image: url('../Assets/Media/feature\ products1.png'); height: 222px; width: 222px;"
+                                class="bg-cover img m-auto flex justify-center items-center">
+                                <div
+                                    class="text-white bg-[#2c366f] opacity-[0.75] uppercase h-7 text-sm tracking-wide w-40 flex items-center justify-center m-auto hover:bg-[#292e4a]">
+                                    <p> <a href="../Shop Page/shop page product details.html">view details</a></p>
+                                </div>
+                            </div>
+                            <div class="text-area text-[#9d7e2e] font-medium tracking-wide mt-2">
+                                <div class="flex">
+                                    <div>
+                                        <p class="text-[10px] font-extralight text-black">Samar Furniture</p>
+                                        <p>Drawing Room Sofa</p>
+                                        <div class="border-b-2 border-solid border-[#9d7e2e]"></div>
+                                    </div>
+                                    <div
+                                        class="bg-[#9d7e2e] text-white flex px-[7px] h-[35px] space-x-1 hover:bg-[#60a1f6]">
+                                        <img src="../Assets/Media/Shopping_cart3.png" alt="" class="h-4 mt-[10px]">
+                                        <button class="uppercase whitespace-nowrap tracking-tighter text-sm pr-2">add to
+                                            cart</button>
+                                    </div>
+                                </div>
+
+
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="text-[10px] font-extralight mt-2 text-black">PKR 14,500</p>
+                                        <p>PKR 12,500 </p>
+                                    </div>
+                                    <div
+                                        class="text-[#9d7e2e] bg-white mt-2 mb-2 px-[14px] tracking-tighter text-sm py-1 hover:underline underline-offset-4 border-x-2 border-y-2 flex space-x-1 border-[#9d7e2e] ">
+                                        <img src="../Assets/Media/BUY_NOW.png" alt="" class="h-4 mt-0.5">
+                                        <button class="uppercase f">buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </main>
+
+    </div>
+
+
+    <footer class="hidden lg:block">
         <div class="flex mt-28">
             <div
-                class="space-for-ads-3 m-auto bg-[#60a1f6] w-[120px] h-[120px] text-white uppercase flex justify-center items-center content-center border-[2px] border-blue-500 tracking-wider text-lg">
+                class="space-for-ads-3 mr-7 ml-7 mt-10 bg-[#60a1f6] w-[120px] h-[120px] text-white uppercase flex justify-center items-center content-center border-[2px] border-blue-500 tracking-wider text-lg">
                 <div class="text-center">
                     <p>200 x 200</p>
                     <p>space</p>
@@ -948,7 +1089,7 @@
             </div>
 
             <div
-                class="space-for-ads-3 m-auto bg-[#60a1f6] w-[120px] h-[120px] text-white uppercase flex justify-center items-center content-center border-[2px] border-blue-500 tracking-wider text-lg">
+                class="space-for-ads-3 mr-7 ml-7 mt-10 bg-[#60a1f6] w-[120px] h-[120px] text-white uppercase flex justify-center items-center content-center border-[2px] border-blue-500 tracking-wider text-lg">
                 <div class="text-center">
                     <p>200 x 200</p>
                     <p>space</p>
@@ -1023,8 +1164,107 @@
             </div>
         </main>
 
-        </footer>
+    </footer>
 
+    <!------------------------------------------- MOBILE RESPONSIVE FIRST FOOTER ------------------------------------------------->
+
+    <footer class="visible lg:hidden">
+        <section>
+            <div class="bg-[#eeeeee] mb-10 p-5 text-center space-y-5 mt-14">
+                <div class="tracking-wider font-medium text-lg">
+                    <h2 class="text-[#9d7e2e] font-medium text-2xl tracking-widest">GET AFFANBABA APP</h2>
+                    <p>Experience buying and renting property</p>
+                    <p>on the move using AffanBaba app</p>
+                </div>
+                <div class="flex justify-center space-x-4">
+                    <div class="w-28 mt-2"><img src="./Assets/Media/footer google play.png" alt=""></div>
+                    <div class="w-28"><img src="./Assets/Media/footer app store.png" alt=""></div>
+                </div>
+            </div>
+
+            <!------------------------------------------- MOBILE RESPONSIVE FIRST FOOTER END ------------------------------------------------->
+
+            <!------------------------------------------- CENTER IMAGE ------------------------------------------------->
+
+            <div>
+                <img src="../Assets/Media/footer mobile_phones (1).png" alt=""
+                    class="w-[250px] h-[210px] m-auto mb-10 sm:w-[300px] sm:h-[260px] lg:w-[350px] lg:h-[310px]">
+            </div>
+
+            <!------------------------------------------- CENTER IMAGE END ------------------------------------------------->
+
+            <!------------------------------------------- MOBILE RESPONSIVE MAIN FOOTER ------------------------------------------------->
+
+            <main>
+                <div id="main-footer" class="bg-[#343434] text-white p-10 space-y-7">
+                    <div><img src="../Assets/Media/1stnav.png" alt="" class="m-auto">
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="company-1">
+                            <h4 class="text-xl font-medium mb-7 tracking-wider">Company</h4>
+                            <div class="text-sm font-extralight leading-6 [word-spacing:0.20rem] tracking-wide">
+                                <ul>
+                                    <li>About Us</li>
+                                    <li>Contact Us</li>
+                                    <li>Jobs</li>
+                                    <li>Help & Support</li>
+                                    <li>Privacy Policy</li>
+                                    <li>Terms Of Use</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="connect">
+                            <h4 class="text-xl font-medium mb-7 tracking-wider">Connect</h4>
+                            <div class="text-sm font-extralight leading-6 [word-spacing:0.20rem] tracking-wide">
+                                <ul>
+                                    <li>Blog</li>
+                                    <li>News</li>
+                                    <li>Forum</li>
+                                    <li>Expo</li>
+                                    <li>Real Estate Agents</li>
+                                    <li>Add Property</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="m-auto text-center">
+                        <h4 class="text-xl font-medium mb-4 tracking-wider ">Corporate Office</h4>
+                        <div class="text-sm font-extralight leading-6 [word-spacing:0.20rem] tracking-wide">
+                            <ul class="text-sm font-extralight leading-6 [word-spacing:0.20rem] tracking-wide">
+                                <li>Somewhere in</li>
+                                <li>Karachi, PK</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="last-footer bg-[#9d7e2e] p-5 space-y-5">
+                    <div>
+                        <h4 class="text-gray-300 text-sm font-medium mb-4 text-center whitespace-nowrap tracking-wider">
+                            Copyright
+                            &copy;
+                            2022 <b>Affan Baba</b>. All Rights Reserved.</h4>
+                    </div>
+                    <div class="flex justify-center space-x-7">
+                        <img src="../Assets/Media/facebook_logo.png" alt="">
+                        <img src="../Assets/Media/Twitter_logo_white.png" alt="">
+                        <img src="../Assets/Media/Instagram_Logo_white.png" alt="">
+                    </div>
+                </div>
+            </main>
+
+
+        </section>
+    </footer>
+
+    <!------------------------------------------- MOBILE RESPONSIVE MAIN FOOTER END ------------------------------------------------->
+
+    <!-- JAVACSCRIPT -->
+    <script src="./category.js"></script>
 </body>
 
 </html>
